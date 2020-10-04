@@ -15,7 +15,7 @@
         1. [Create styles.css](####Create-styles.css)
     1. [Check commit history](###Check-commit-history)
     1. [Navigate through branches](###Navigate-through-branches)
-    1. [Update master branch with the branch we just created](###Update-master-branch-with-the-branch-we just-created)
+    1. [Update main branch with the branch we just created](###Update-main-branch-with-the-branch-we-just-created)
     1. [Send changes to git server(github.com)](###Send-changes-to-git-server(github.com))
 
 
@@ -132,7 +132,7 @@ git commit -m “fix: update paragraph”
 ```
 -   Let’s go and see how the index.html works
 ### Add style customization to index.html
-We are currently working on a branch called **master**, we can check that  
+We are currently working on a branch called **main**, we can check that  
 ```bash
 git branch
 ```
@@ -187,16 +187,16 @@ We have two branches
 git branch
 ```  
 To navigate branches we type “git checkout <branchname>”, note that when adding -b tag git creates a new branch git the current branch commits.
-Let’s checkout the master branch 
+Let’s checkout the main branch 
 ```bash 
-git checkout master
+git checkout main
 ```
-### Update master branch with the branch we just created
+### Update main branch with the branch we just created
 Let’s go and see how the index.html works, as you can see the webpage doesn't have style, because those changes were saved on branch add_style. Now that we know that code in add_style works well we can add it to our main branch.
 ```bash
 git merge add_style
 ```
-now all the commits in add_style are in master
+now all the commits in add_style are in main
 Now lets check the commit history
 ```bash 
 git log --oneline
