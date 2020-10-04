@@ -97,12 +97,15 @@ git commit -m “feat: add index webpage”
 git status
 ``` 
 ### Commit Messages Explained
-About the commit message it is recommended to start with this format: <type>: <description>
-There are 2 main <type>s, feat and fix.
-Feat mean feature, it is used when the software does something new
-Fix is used when something was not working as expected and had to be fixed
-<description> : a description of what changed in code, starting with a present tense verb like add/update/remove/create
-Fore complex projects check how to use conventional commits here: https://www.conventionalcommits.org/en/v1.0.0/
+The commit message should be structured as follows:
+```bash
+<type>: <description>
+``` 
+-   There are 2 main types, **feat** and **fix**.
+    -   Feat means feature, it is used when the software does something new
+    -   Fix is used when something was not working as expected and had to be fixed
+-   Description : a description of what changed in code, starting with a present tense verb like add/update/remove/create
+-   Fore complex projects check how to use conventional commits here: https://www.conventionalcommits.org/en/v1.0.0/
 
 ### Update index.html
 -   Change 
