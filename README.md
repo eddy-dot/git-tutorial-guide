@@ -28,6 +28,21 @@
 ## How Git Works:
 ![Leave as default](./images/Git-workflow.jpg)
 <br/>
+## Basic Git Cheatsheet:
+| Command   |      Description                                  |
+|-----------|:-------------------------------------------------:|
+| clone     | Clone a repository into a new directory           |
+| add       | Add file contents to the index                    |
+| status    | Show the working tree status                      |
+| commit    | Record changes to the repository                  |
+| log       | Show commit logs                                  |
+| branch    | List, create, or delete branches                  |
+| checkout  | Switch branches or restore working tree files     |
+| merge     | Join two or more development histories together   |
+| revert    | Revert some existing commits                      |
+| push      | Update remote refs along with associated objects  |
+<br/>
+
 The repository has for states:
 1.  Working directory: where I edit , create and delete files
 1.  Staging area, where the changes in the working directory are selected to be saved
