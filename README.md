@@ -160,7 +160,7 @@ git add style.css
 ```
 We now Update index.html, adding inside head tag 
 ```html
-<link rel="style" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 ```
 -   lets add that change to the staging area 
 ```bash
