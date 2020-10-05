@@ -43,14 +43,14 @@
 | push      | Update remote refs along with associated objects  |
 <br/>
 
-The repository has for states:
-1.  Working directory: where I edit , create and delete files
-1.  Staging area, where the changes in the working directory are selected to be saved
-1.  Local repo: where the changes are in the staging area are saved, using
+The repository has four states:
+1.  **Working directory**: where I edit , create and delete files
+2.  **Staging area**, where the changes in the working directory are selected to be saved
+3.  **Local repo**: where the changes are in the staging area are saved, using
 ```bash
 git commit -m "example"
 ```
-1.  Remote repo: it is a web server hosting git, we are going to use github.com but there are some alternatives like gitlab.com, bitbucket.com
+4.  **Remote repo**: it is a web server hosting git, we are going to use github.com but there are some alternatives like gitlab.com, bitbucket.com
 ## Steps
 ### Create github repository
 -   Go to github.com, login if you haven't
@@ -227,4 +227,18 @@ git push
 As we are using Github we might be asked github username and password
 Once the code is pushed, go go github.com, find the repository you just created and check the changes
 
-Don’t forget to like the video and subscribe for more programming videos.
+### Undo commit
+Now we want to check the commits
+```bash 
+git push
+```
+And we find out that the last commit shouldn't have been done, let's undo it
+```bash 
+git revert <cimmit-id>
+```
+the default text editor is vim , so to save and close tyoe semicolon w q
+We checkout the last commit and find that a new commit is created reverting the one we didn't want
+```bash 
+git log --oneline
+```
+We checkout the product and find that the changes in the reverted commit are gone
